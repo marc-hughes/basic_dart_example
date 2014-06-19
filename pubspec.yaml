@@ -1,0 +1,9 @@
+name: bugexample2
+dependencies:
+  browser: any
+  angular:
+    path: /Users/mhughes/sdks/angular.dart
+  js: any
+  chart: ">=0.3.7 <0.4.0"
+  quiver: '>=0.18.0<0.19.0'
+  collection: ">=0.9.3+1 <0.10.0"

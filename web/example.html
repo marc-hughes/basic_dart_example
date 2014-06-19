@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" ng-app>
+<head>
+    <link href="animate.css" rel="stylesheet">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+    <style>
+        .the-list {
+            width: 125px;
+        }
+        .card {
+            border: 1px solid #000;
+            height: 50px;
+            /*background-color: #fafafa;*/
+            margin-bottom: 5px;
+            list-style: none;
+            padding: 5px;
+        }
+
+
+        .card-component.ng-enter .card {
+            -webkit-animation: fadeInLeft 0.5s;
+            -moz-animation: fadeInLeft 0.5s;
+            animation: fadeInLeft 0.5s;
+        }
+
+        .card-component.ng-enter-active .card {
+
+        }
+
+
+        .card-component.ng-leave .card {
+            transition: display 0.1s;
+            -webkit-animation: fadeOutRight 0.5s;
+            -moz-animation: fadeOutRight 0.5s;
+            animation: fadeOutRight 0.5s;
+            display: block;
+        }
+
+        .card-component.ng-leave-active .card {
+            opacity: 0;
+        }
+
+
+    </style>
+
+</head>
+<body>
+    <parent-component></parent-component>
+
+
+    <script type="application/dart" src="example.dart"></script>
+ </body>
+</html>
